@@ -81,7 +81,7 @@
 #define MODE1_SLEEP   0x10
 #define MODE1_ALLCALL 0x01
 
-static void void delay(int i) {
+static void delay(int i) {
 	while (i) {
 		i--;
 	}
