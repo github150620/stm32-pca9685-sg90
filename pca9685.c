@@ -158,7 +158,7 @@ void PCA9685_ReadReg(u8 addr, u8 *value) {
 	I2C_GenerateSTOP(I2C2, ENABLE);	
 }
 
-void PCA9685_SetChannelPWM(u8 channel, u32 on, u32 off) {
+void PCA9685_SetChannelDuty(u8 channel, u32 on, u32 off) {
 	I2C_AcknowledgeConfig(I2C2, ENABLE);
 	
 	I2C_GenerateSTART(I2C2, ENABLE);
